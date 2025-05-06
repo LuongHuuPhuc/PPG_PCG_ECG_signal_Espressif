@@ -30,7 +30,7 @@
 #include "driver/gpio.h"
 #include "max30102.h"
 
-//Cau hinh chan cho SPH0645
+//Cau hinh chan cho INMP441 
 #define I2S_PORT      I2S_NUM_0
 #define DIN_PIN       33
 #define BCLK_PIN      32
