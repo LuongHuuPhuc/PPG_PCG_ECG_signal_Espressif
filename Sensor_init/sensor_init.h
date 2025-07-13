@@ -107,4 +107,9 @@ void mutex_init(void);
  */
 void printData_task(void *pvParameter);
 
+/**
+ * @brief Ham su dung Timer de dong bo cam bien
+ */
+void sensor_timer_callback(void);
+
 #endif //SENSOR_INIT_H
