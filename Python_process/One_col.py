@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Đọc file CSV không có header
-file_path = r"D:\Esp-idf\PPG_PCG_ECG_synchro\Data_text\test2.csv" # Đổi thành đường dẫn file của bạn
+file_path = r"D:\Esp-idf\PPG_PCG_ECG_synchro\Data_text\test5.csv" # Đổi thành đường dẫn file của bạn
 column_index = 1       # Đổi số cột bạn muốn vẽ (0 là cột đầu tiên)
 
 # Đọc dữ liệu

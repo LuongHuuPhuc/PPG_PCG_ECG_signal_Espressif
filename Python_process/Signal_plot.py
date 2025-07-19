@@ -2,8 +2,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Đọc dữ liệu từ file CSV không có tiêu đề
-df = pd.read_csv(r"D:\Esp-idf\PPG_PCG_ECG_synchro\Data_text\test3.csv", header=None)
-df.columns = ["ECG", "RED", "IR"]
+df = pd.read_csv(r"D:\Esp-idf\PPG_PCG_ECG_synchro\Data_text\test9.csv", header=None)
+df.columns = ["ECG", "RED", "IR", "PCG"]  # Đặt tên cột tương ứng
 
 # Định nghĩa khoảng cần vẽ (bạn có thể điều chỉnh)
 start = 0
@@ -13,7 +13,7 @@ end = len(df)
 x = range(start, end)
 
 # Tạo biểu đồ
-fig, axs = plt.subplots(3, 1, figsize=(12, 8), sharex=True)
+fig, axs = plt.subplots(4, 1, figsize=(12, 8), sharex=True)
 
 # ECG
 axs[0].plot(x, df["ECG"][start:end], color='orange')
@@ -33,6 +33,13 @@ axs[2].set_title("PPG IR Signal")
 axs[2].set_xlabel("Sample Index")
 axs[2].set_ylabel("Amplitude")
 axs[2].grid(True)
+
+# PCG
+axs[3].plot(x, df["PCG"][start:end], color='blue')
+axs[3].set_title("PCG Signal")
+axs[3].set_xlabel("Sample Index")
+axs[3].set_ylabel("Amplitude")
+axs[3].grid(True)
 
 plt.tight_layout()
 plt.show()
