@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Đọc dữ liệu từ file CSV không có tiêu đề
-df = pd.read_csv(r"D:\Esp-idf\PPG_PCG_ECG_synchro\Data_text\test9.csv", header=None)
+df = pd.read_csv(r"D:\Esp-idf\PPG_PCG_ECG_synchro\Data_text\test10.csv", header=None)
 df.columns = ["ECG", "RED", "IR", "PCG"]  # Đặt tên cột tương ứng
 
 # Định nghĩa khoảng cần vẽ (bạn có thể điều chỉnh)
